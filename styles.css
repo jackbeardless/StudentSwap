@@ -1,0 +1,56 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Centering the breadcrumb at the top middle */
+wa-breadcrumb {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+/* Avatar styling for the top right corner */
+.avatar-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.show {
+    display: block;
+}
