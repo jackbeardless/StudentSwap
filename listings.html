@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Imports Below: -->
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.4/dist/themes/default.css" />
+    <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-alpha.4/dist/webawesome.loader.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
+    <!-- Imports Above: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <wa-breadcrumb>
+        <wa-breadcrumb-item href="index.html">Home</wa-breadcrumb-item>
+        <wa-breadcrumb-item href="listings.html">listings</wa-breadcrumb-item>
+    </wa-breadcrumb>
+
+    <!-- Avatar with dropdown -->
+    <div class="avatar-container">
+        <wa-avatar initials="JB" label="Jack Beard" shape="circle" class="avatar-icon"></wa-avatar>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="profile.html">Profile</a>
+            <a href="listings.html">My Listings</a>
+            <a href="messages.html">Messages</a>
+            <a href="logout.html">Log out</a>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
