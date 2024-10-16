@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Listings</title>
     <!-- Imports Below: -->
     <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.4/dist/themes/default.css" />
     <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-alpha.4/dist/webawesome.loader.js"></script>
@@ -13,7 +13,7 @@
 <body>
     <wa-breadcrumb>
         <wa-breadcrumb-item href="index.html">Home</wa-breadcrumb-item>
-        <wa-breadcrumb-item href="listings.html">listings</wa-breadcrumb-item>
+        <wa-breadcrumb-item href="listings.html">Listings</wa-breadcrumb-item>
     </wa-breadcrumb>
 
     <!-- Avatar with dropdown -->
@@ -27,6 +27,24 @@
         </div>
     </div>
 
+    <!-- Dialog for creating a listing -->
+    <wa-dialog label="Create a listing" with-header with-footer class="dialog-overview">
+        <form id="createListingForm">
+            <label for="itemName">Item Name</label>
+            <wa-input id="itemName" name="itemName" placeholder="Enter item name"></wa-input>
+            
+            <label for="itemPrice">Item Price</label>
+            <wa-input id="itemPrice" name="itemPrice" type="number" placeholder="Enter item price"></wa-input>
+
+            <label for="itemDescription">Description</label>
+            <wa-textarea id="itemDescription" name="itemDescription" placeholder="Enter description"></wa-textarea>
+        </form>
+        <wa-button slot="footer" appearance="outlined" variant="neutral" data-dialog="close">Close</wa-button>
+        <wa-button slot="footer" appearance="filled" variant="success" id="saveListingButton">Save Listing</wa-button>
+    </wa-dialog>
+
+    <!-- Button to open the dialog -->
+    <wa-button appearance="outlined" variant="neutral" data-dialog="open">Create a listing</wa-button>
 
     <script src="script.js"></script>
 </body>
