@@ -54,3 +54,16 @@ wa-breadcrumb {
 .show {
     display: block;
 }
+/* Featured Listings Carousel styling */
+wa-carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+wa-carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
